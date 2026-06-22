@@ -123,7 +123,7 @@ Alliance Partner Network — <a href="https://aykaalliance.in">https://aykaallia
       to: data.email,
       cc: 'hello@aykaalliance.in, alliance@aykacare.in',
       bcc: 'noreplyayka@gmail.com',
-      subject: \`AYKA Care Franchise Opportunity | Build the Future of Healthcare in Your Territory \${data.franchise_model}\`,
+      subject: 'AYKA Care Franchise Opportunity | Build the Future of Healthcare in Your Territory ' + data.franchise_model,
       html: customerHtml,
     })
   } catch (err) {
@@ -131,23 +131,21 @@ Alliance Partner Network — <a href="https://aykaalliance.in">https://aykaallia
   }
 
   // 3. Send internal notification email
-  const internalHtml = \`
-    <h2>New Franchise Enquiry Received</h2>
-    <p><strong>Name:</strong> \${data.first_name} \${data.last_name}</p>
-    <p><strong>Email:</strong> \${data.email}</p>
-    <p><strong>Phone:</strong> \${data.phone}</p>
-    <p><strong>City / State:</strong> \${data.city_state}</p>
-    <p><strong>Franchise Model:</strong> \${data.franchise_model}</p>
-    \${data.occupation ? \`<p><strong>Occupation:</strong> \${data.occupation}</p>\` : ''}
-    \${data.message ? \`<p><strong>Message:</strong> \${data.message}</p>\` : ''}
-    <p><strong>Submitted At:</strong> \${new Date().toLocaleString()}</p>
-  \`
+  const internalHtml = '<h2>New Franchise Enquiry Received</h2>' +
+    '<p><strong>Name:</strong> ' + data.first_name + ' ' + data.last_name + '</p>' +
+    '<p><strong>Email:</strong> ' + data.email + '</p>' +
+    '<p><strong>Phone:</strong> ' + data.phone + '</p>' +
+    '<p><strong>City / State:</strong> ' + data.city_state + '</p>' +
+    '<p><strong>Franchise Model:</strong> ' + data.franchise_model + '</p>' +
+    (data.occupation ? '<p><strong>Occupation:</strong> ' + data.occupation + '</p>' : '') +
+    (data.message ? '<p><strong>Message:</strong> ' + data.message + '</p>' : '') +
+    '<p><strong>Submitted At:</strong> ' + new Date().toLocaleString() + '</p>'
 
   try {
     await transporter.sendMail({
       from: '"AYKA Website Bot" <hello@aykacare.co.in>',
       to: 'iaykacare@gmail.com',
-      subject: \`New Franchise Enquiry: \${data.franchise_model} - \${data.first_name} \${data.last_name}\`,
+      subject: 'New Franchise Enquiry: ' + data.franchise_model + ' - ' + data.first_name + ' ' + data.last_name,
       html: internalHtml,
     })
   } catch (err) {
