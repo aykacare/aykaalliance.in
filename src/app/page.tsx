@@ -362,38 +362,59 @@ export default function HomePage() {
             <span className="anim anim-fade text-primary font-bold text-sm uppercase tracking-widest">Partner Stories</span>
             <h2 className="anim anim-up d1 text-4xl font-bold text-primary mt-4">Trusted by franchise partners across India.</h2>
           </div>
-          <div className="stagger-container grid md:grid-cols-2 gap-8">
-            {[
-              {
-                quote: 'Becoming an AYKA Care franchise partner has been one of the best decisions for my career and community. The team\'s guidance in setup, marketing, and daily operations made the journey seamless.',
-                initials: 'AP',
-                name: 'Abhishek Pal',
-                role: 'District Franchise · Saharanpur',
-                bg: 'bg-primary-fixed',
-                tc: 'text-primary',
-              },
-              {
-                quote: 'The investment was reasonable, and the returns have exceeded my expectations. The technology platforms and marketing support make operations smooth — allowing me to focus on expanding healthcare access.',
-                initials: 'SY',
-                name: 'Sanjay Yadav',
-                role: 'District Franchise · Muzaffarnagar',
-                bg: 'bg-secondary-container',
-                tc: 'text-secondary',
-              },
-            ].map((t) => (
-              <div key={t.name} className="stagger-child hover-lift bg-white p-8 rounded-2xl card-shadow">
-                <p className="text-lg text-primary italic mb-8 leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
-                <div className="flex items-center gap-4">
-                  <div className={`w-12 h-12 rounded-full ${t.bg} flex items-center justify-center ${t.tc} font-bold`}>
-                    {t.initials}
-                  </div>
-                  <div>
-                    <div className="font-bold text-sm uppercase tracking-wider text-primary">{t.name}</div>
-                    <div className="text-xs text-on-surface-variant mt-0.5">{t.role}</div>
+
+          {/* Two-column layout: stories left, video right */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+            {/* Left: Testimonial Cards */}
+            <div className="stagger-container flex flex-col gap-8">
+              {[
+                {
+                  quote: 'Becoming an AYKA Care franchise partner has been one of the best decisions for my career and community. The team\'s guidance in setup, marketing, and daily operations made the journey seamless.',
+                  initials: 'AP',
+                  name: 'Abhishek Pal',
+                  role: 'District Franchise · Saharanpur',
+                  bg: 'bg-primary-fixed',
+                  tc: 'text-primary',
+                },
+                {
+                  quote: 'The investment was reasonable, and the returns have exceeded my expectations. The technology platforms and marketing support make operations smooth — allowing me to focus on expanding healthcare access.',
+                  initials: 'SY',
+                  name: 'Sanjay Yadav',
+                  role: 'District Franchise · Muzaffarnagar',
+                  bg: 'bg-secondary-container',
+                  tc: 'text-secondary',
+                },
+              ].map((t) => (
+                <div key={t.name} className="stagger-child hover-lift bg-white p-8 rounded-2xl card-shadow">
+                  <p className="text-lg text-primary italic mb-8 leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
+                  <div className="flex items-center gap-4">
+                    <div className={`w-12 h-12 rounded-full ${t.bg} flex items-center justify-center ${t.tc} font-bold`}>
+                      {t.initials}
+                    </div>
+                    <div>
+                      <div className="font-bold text-sm uppercase tracking-wider text-primary">{t.name}</div>
+                      <div className="text-xs text-on-surface-variant mt-0.5">{t.role}</div>
+                    </div>
                   </div>
                 </div>
+              ))}
+            </div>
+
+            {/* Right: YouTube Short */}
+            <div className="flex flex-col items-center">
+              <span className="text-primary font-bold text-sm uppercase tracking-widest mb-6">Watch Our Story</span>
+              <div className="relative w-full max-w-xs mx-auto rounded-2xl overflow-hidden shadow-2xl" style={{aspectRatio: '9/16'}}>
+                <iframe
+                  src="https://www.youtube.com/embed/75Vw3S4ekfk"
+                  title="AYKA Life Partner Story"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                ></iframe>
               </div>
-            ))}
+            </div>
+
           </div>
         </div>
       </section>
@@ -408,10 +429,7 @@ export default function HomePage() {
               <p className="text-base text-on-surface-variant mt-6 leading-relaxed">
                 Can&apos;t find what you&apos;re looking for? Reach out to our franchise support team directly.
               </p>
-              <button className="mt-8 flex items-center gap-2 text-primary font-bold hover:underline text-sm uppercase tracking-wider btn-hover">
-                Download Franchise Prospectus
-                <span className="material-symbols-outlined">download</span>
-              </button>
+
             </div>
             <div className="stagger-container lg:col-span-2 space-y-4">
               {[

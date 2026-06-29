@@ -6,8 +6,14 @@ import nodemailer from 'nodemailer'
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
 
-// Initialize Supabase only if keys are present to prevent server crash on startup
-const supabase = supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null
+// Check if credentials are valid and not the default template values
+const isSupabaseConfigured = 
+  supabaseUrl && 
+  supabaseAnonKey && 
+  !supabaseUrl.includes('your-project.supabase.co') && 
+  supabaseAnonKey !== 'your-anon-key-here'
+
+const supabase = isSupabaseConfigured ? createClient(supabaseUrl, supabaseAnonKey) : null
 
 
 const transporter = nodemailer.createTransport({
@@ -31,6 +37,67 @@ export type ApplicationData = {
   message?: string
 }
 
+// ─── WhatsApp Message Sender ───────────────────────────────────────────────
+async function sendWhatsAppMessage(phone: string, name: string, franchiseModel: string) {
+  const apiKey = process.env.WACRM_API_KEY
+  const apiUrl = process.env.WACRM_API_URL
+
+  if (!apiKey || !apiUrl) {
+    console.warn('⚠️ WACRM API key or URL not configured. Skipping WhatsApp message.')
+    return
+  }
+
+  // Normalise phone — strip spaces/dashes, ensure 91 country code prefix
+  let normalised = phone.replace(/[\s\-\+]/g, '')
+  if (normalised.startsWith('0')) normalised = normalised.slice(1)
+  if (!normalised.startsWith('91')) normalised = '91' + normalised
+
+  const messageBody =
+    `Dear *${name}*,\n\n` +
+    `Thank you for your interest in becoming an *AYKA Care ${franchiseModel} Partner*. We have received your enquiry successfully.\n\n` +
+    `📩 We've just sent you a detailed *Franchise Information Kit* to your registered email. It includes:\n\n` +
+    `✅ Franchise Investment Details\n` +
+    `✅ Revenue Model\n` +
+    `✅ Territory Benefits\n` +
+    `✅ Technology & Business Support\n` +
+    `✅ Onboarding Process\n\n` +
+    `Please check your *Inbox* (and *Spam/Junk* folder if needed).\n\n` +
+    `If you'd like a quick discussion to understand the opportunity, simply reply to this message or call us.\n\n` +
+    `📞 +91 93151 95736\n` +
+    `📧 alliance@aykacare.in\n\n` +
+    `Explore AYKA:\n` +
+    `🌐 Patients: https://aykacare.in\n` +
+    `🌐 Medical Professionals: https://aykaexpert.in\n` +
+    `🌐 Alliance Network: https://aykaalliance.in\n\n` +
+    `We look forward to welcoming you to the AYKA Care family.\n\n` +
+    `*AYKA Care – Making Expert Healthcare Accessible, Available & Affordable.*`
+
+  try {
+    const res = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        phone: normalised,
+        type: 'text',
+        text: { body: messageBody },
+      }),
+    })
+
+    const json = await res.json()
+    if (!res.ok) {
+      console.error('❌ WhatsApp send failed:', json)
+    } else {
+      console.log('✅ WhatsApp message sent to', normalised)
+    }
+  } catch (err) {
+    console.error('❌ WhatsApp API error:', err)
+  }
+}
+// ──────────────────────────────────────────────────────────────────────────
+
 export async function submitApplication(data: ApplicationData) {
   // 1. Save to Supabase (if configured)
   if (supabase) {
@@ -44,7 +111,7 @@ export async function submitApplication(data: ApplicationData) {
 
     if (error) {
       console.error('Supabase error:', error)
-      return { success: false, error: error.message }
+      // Log error but do not fail the request, so email and WhatsApp are still sent
     }
   } else {
     console.warn('⚠️ Supabase is not configured. Form data will not be saved to database, but emails will still be sent.')
@@ -156,5 +223,10 @@ Alliance Partner Network — <a href="https://aykaalliance.in">https://aykaallia
     console.error('Error sending internal notification email:', err)
   }
 
+  // 4. Send WhatsApp message to applicant
+  const fullName = `${data.first_name} ${data.last_name}`
+  await sendWhatsAppMessage(data.phone, fullName, data.franchise_model)
+
   return { success: true }
 }
+

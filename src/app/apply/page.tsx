@@ -58,19 +58,7 @@ export default function ApplyPage() {
               </a>
             </div>
 
-            {/* Testimonial Inlay */}
-            <div className="mt-10 bg-primary-container/30 p-6 rounded-xl border border-primary-fixed/30">
-              <p className="text-base italic text-on-surface leading-relaxed mb-4">
-                &ldquo;Becoming an AYKA Care franchise partner has been one of the best decisions for my career and community.&rdquo;
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold text-sm">AP</div>
-                <div>
-                  <div className="font-bold text-sm text-primary">Abhishek Pal</div>
-                  <div className="text-xs text-on-surface-variant">District Franchise · Saharanpur</div>
-                </div>
-              </div>
-            </div>
+
           </div>
 
           {/* Right: form */}

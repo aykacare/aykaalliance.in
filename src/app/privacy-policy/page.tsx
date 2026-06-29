@@ -16,214 +16,321 @@ export default function PrivacyPolicyPage() {
             <h1 className="text-4xl font-bold text-primary mb-4">Privacy Policy</h1>
             <p className="text-sm text-on-surface-variant uppercase tracking-widest font-bold">AYKA CLYVORA PRIVATE LIMITED</p>
             <div className="mt-6 flex flex-col sm:flex-row sm:gap-8 gap-2 text-sm text-on-surface-variant">
-              <p><strong>Effective Date:</strong> 11th May 2025</p>
-              <p><strong>Last Updated:</strong> 11th May 2025</p>
+              <p><strong>Effective Date:</strong> 8 May 2026</p>
+              <p><strong>Last Updated:</strong> 8 May 2026</p>
               <p><strong>Governed by:</strong> Laws of India</p>
             </div>
             <p className="mt-2 text-sm text-on-surface-variant"><strong>Contact:</strong> support@aykacare.in</p>
           </div>
 
           <div className="prose prose-primary max-w-none text-on-surface space-y-8">
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">1. Introduction</h2>
-              <p className="leading-relaxed mb-4">
-                AYKA CLYVORA PRIVATE LIMITED (&quot;AYKA&quot;, &quot;Company&quot;, &quot;We&quot;, &quot;Us&quot;, or &quot;Our&quot;), operating the AYKA Care platform at www.aykacare.in, is committed to protecting the privacy, confidentiality, and security of all personal data collected through its platforms, services, and establishments. This Privacy Policy is formulated in compliance with the Digital Personal Data Protection Act, 2023 (&quot;DPDP Act&quot;), the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and all other applicable Indian laws and regulations.
-              </p>
-              <p className="leading-relaxed mb-4">
-                This Privacy Policy governs the collection, processing, storage, use, disclosure, and protection of personal data of all users of the AYKA platform, including Experts, Establishments, Patients, Alliance Partners, Third-Party Partners, and Visitors.
-              </p>
-              <p className="leading-relaxed">
-                By accessing or using any AYKA platform or service, you consent to the collection and use of your information as described in this Privacy Policy.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">2. Scope of Application</h2>
-              <p className="leading-relaxed mb-4">This Privacy Policy applies to all AYKA platforms and services, including:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>AYKA Website: www.aykacare.in</li>
-                <li>AYKA Mobile Applications (Android and iOS)</li>
-                <li>AYKA CRM and Administrative Systems</li>
-                <li>AYKA Establishments: AYKA Life (Alliance Offices), AYKA Clinic, AYKA Hospital</li>
-                <li>All third-party integrations and tools used by AYKA</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">3. Categories of Data Collected</h2>
-              
-              <h3 className="text-xl font-bold text-primary mt-6 mb-3">3.1 Personal and Professional Information</h3>
-              <ul className="list-disc pl-6 space-y-2 mb-6">
-                <li>Full name, date of birth, gender, nationality</li>
-                <li>Contact details: mobile number, email address, residential/business address</li>
-                <li>Government-issued identity documents (Aadhaar, PAN, Passport, etc.) where required</li>
-                <li>Professional credentials, medical registration numbers, and certifications (for Experts and Establishments)</li>
-                <li>Business registration details, GST number (for Establishments and Alliance Partners)</li>
-                <li>Profile photographs and identity verification documents</li>
-              </ul>
-
-              <h3 className="text-xl font-bold text-primary mt-6 mb-3">3.2 Health and Medical Information (Sensitive Personal Data)</h3>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>Medical history, current health conditions, prescriptions</li>
-                <li>Consultation notes, diagnostic reports, lab test results</li>
-                <li>Health insurance details and claims information</li>
-                <li>Appointment records and treatment history</li>
-              </ul>
-              <p className="leading-relaxed mb-6 italic text-sm">
-                Health and medical information is classified as Sensitive Personal Data under Indian law and is collected only with your explicit informed consent and processed with the highest standards of security and confidentiality.
-              </p>
-
-              <h3 className="text-xl font-bold text-primary mt-6 mb-3">3.3 Financial Information</h3>
-              <ul className="list-disc pl-6 space-y-2 mb-6">
-                <li>Payment method details (processed through secure, PCI-DSS compliant gateways)</li>
-                <li>Transaction history, subscription details, invoice records</li>
-                <li>Bank account details for expert/establishment payouts (encrypted storage)</li>
-              </ul>
-
-              <h3 className="text-xl font-bold text-primary mt-6 mb-3">3.4 Technical and Usage Data</h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>IP address, device ID, operating system, browser type</li>
-                <li>Location data (only when explicitly permitted by the user)</li>
-                <li>Platform usage patterns, session data, interaction logs</li>
-                <li>Cookies and tracking technologies data</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">4. Purpose of Data Collection and Use</h2>
-              <p className="leading-relaxed mb-4">AYKA processes personal data strictly for the following lawful purposes:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Facilitating healthcare service connections between Users and Service Providers</li>
-                <li>Account registration, identity verification, and profile management</li>
-                <li>Processing payments, managing subscriptions, and administering payouts</li>
-                <li>Sending appointment confirmations, reminders, and service notifications</li>
-                <li>Improving platform functionality, user experience, and technical performance</li>
-                <li>Conducting fraud prevention, security monitoring, and compliance checks</li>
-                <li>Fulfilling legal and regulatory obligations under applicable Indian law</li>
-                <li>Sending marketing communications and promotional offers (with explicit consent; opt-out available at any time)</li>
-                <li>Career and job placement services for registered Experts</li>
-                <li>Generating aggregated, anonymized analytical reports for platform improvement</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">5. Legal Basis for Processing</h2>
-              <p className="leading-relaxed mb-4">AYKA processes personal data on the following legal bases under the DPDP Act, 2023:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Consent:</strong> Where you have provided explicit, informed, and free consent</li>
-                <li><strong>Contract:</strong> Where processing is necessary to provide services you have requested</li>
-                <li><strong>Legal Obligation:</strong> Where processing is required by applicable Indian law or court order</li>
-                <li><strong>Legitimate Interest:</strong> Where processing serves a legitimate business interest that does not override your rights</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">6. Sharing of Personal Data</h2>
-              <p className="leading-relaxed mb-6">AYKA does not sell, rent, or trade your personal data. Personal data may be shared in the following limited circumstances:</p>
-              
-              <h3 className="text-xl font-bold text-primary mt-4 mb-2">6.1 With Service Providers on the Platform</h3>
-              <p className="leading-relaxed mb-6">Healthcare professionals, clinics, hospitals, labs, pharmacies, and other registered Service Providers receive only the data necessary to render the specific service requested by the User.</p>
-
-              <h3 className="text-xl font-bold text-primary mt-4 mb-2">6.2 With Authorized Third-Party Technology Partners</h3>
-              <p className="leading-relaxed mb-6">Payment gateways, cloud hosting providers, analytics platforms, and communication service providers — all bound by strict data processing agreements ensuring compliance with applicable law.</p>
-
-              <h3 className="text-xl font-bold text-primary mt-4 mb-2">6.3 With Legal and Regulatory Authorities</h3>
-              <p className="leading-relaxed mb-6">Disclosure may be made to government bodies, law enforcement agencies, courts, or regulatory authorities when required by applicable law, court order, or to protect AYKA&apos;s legal rights.</p>
-
-              <h3 className="text-xl font-bold text-primary mt-4 mb-2">6.4 Business Transfers</h3>
-              <p className="leading-relaxed">In the event of a merger, acquisition, or restructuring of AYKA, personal data may be transferred as part of that transaction, subject to equivalent privacy protections.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">7. Data Security</h2>
-              <p className="leading-relaxed mb-4">AYKA implements industry-standard technical and organizational security measures, including:</p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>End-to-end encryption of sensitive personal and medical data</li>
-                <li>Role-based access control limiting data access to authorized personnel only</li>
-                <li>Regular security audits, vulnerability assessments, and penetration testing</li>
-                <li>Secure, encrypted cloud storage with data backup protocols</li>
-                <li>Multi-factor authentication for platform access</li>
-              </ul>
-              <p className="leading-relaxed italic text-sm">
-                Despite these measures, no digital platform can guarantee absolute security. Users are advised to maintain strong passwords, not share login credentials, and report any suspicious activity to support@aykacare.in immediately.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">8. Data Retention</h2>
-              <p className="leading-relaxed mb-4">AYKA retains personal data for the duration necessary to fulfil the purposes outlined in this Policy and as required under applicable Indian law, including:</p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li><strong>Medical records:</strong> As mandated by applicable Indian healthcare regulations</li>
-                <li><strong>Financial and transaction records:</strong> As required under the Income Tax Act and GST laws</li>
-                <li><strong>Account data:</strong> For the duration of active account and a reasonable period thereafter for legal compliance</li>
-                <li><strong>Legal hold data:</strong> For the duration of any pending legal proceedings or regulatory investigations</li>
-              </ul>
-              <p className="leading-relaxed">Upon expiry of the applicable retention period, data will be securely deleted or irreversibly anonymized.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">9. Your Rights Under the DPDP Act, 2023</h2>
-              <p className="leading-relaxed mb-4">As a Data Principal under the DPDP Act, 2023, you have the following rights:</p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li><strong>Right to Access:</strong> Request information about what personal data we hold about you</li>
-                <li><strong>Right to Correction:</strong> Request correction of inaccurate or incomplete data</li>
-                <li><strong>Right to Erasure:</strong> Request deletion of your personal data, subject to legal retention obligations</li>
-                <li><strong>Right to Grievance Redressal:</strong> Raise complaints regarding data processing with our Grievance Officer</li>
-                <li><strong>Right to Nominate:</strong> Nominate another individual to exercise your rights in case of your incapacity or death</li>
-                <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for data processing at any time (subject to impact on service availability)</li>
-              </ul>
-              <p className="leading-relaxed font-semibold">To exercise any of the above rights, contact our Grievance Officer at: support@aykacare.in</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">10. Grievance Officer</h2>
-              <p className="leading-relaxed mb-4">In accordance with the Information Technology Act, 2000, and the DPDP Act, 2023, AYKA has appointed a Grievance Officer for data protection matters:</p>
-              <div className="bg-surface-container p-6 rounded-xl border border-outline-variant/30 mb-4">
-                <ul className="space-y-2 font-semibold">
-                  <li>Organization: AYKA CLYVORA PRIVATE LIMITED</li>
-                  <li>Email: support@aykacare.in</li>
-                  <li>Website: www.aykacare.in</li>
-                  <li>Jurisdiction: Saharanpur, Uttar Pradesh, India</li>
-                </ul>
-              </div>
-              <p className="leading-relaxed italic text-sm">All grievances will be acknowledged within 48 hours and resolved within 30 days of receipt.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">11. Cookies and Tracking Technologies</h2>
-              <p className="leading-relaxed mb-4">AYKA uses cookies and similar tracking technologies to enhance user experience. Types of cookies used:</p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li><strong>Essential Cookies:</strong> Required for core platform functionality — cannot be disabled</li>
-                <li><strong>Analytical Cookies:</strong> Used to understand usage patterns and improve performance</li>
-                <li><strong>Marketing Cookies:</strong> Used for personalized communication (with consent; can be opted out)</li>
-              </ul>
-              <p className="leading-relaxed">Users may manage cookie preferences through their browser settings. Disabling certain cookies may affect platform functionality.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">12. Data of Minors</h2>
-              <p className="leading-relaxed">
-                The AYKA platform is intended for users aged 18 years and above. AYKA does not knowingly collect personal data of individuals below 18 years of age without verified parental or guardian consent. If AYKA discovers that data of a minor has been collected without such consent, it will be promptly deleted.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">13. Changes to This Privacy Policy</h2>
-              <p className="leading-relaxed">
-                AYKA reserves the right to update this Privacy Policy at any time. Material changes will be communicated via email notification or a prominent notice on the platform. Continued use of the platform after the effective date of any update constitutes acceptance of the revised policy. Users are advised to periodically review this Policy.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">14. Governing Law</h2>
-              <p className="leading-relaxed">
-                This Privacy Policy is governed by the laws of India, including the DPDP Act, 2023, and the Information Technology Act, 2000. Disputes shall be subject to the exclusive jurisdiction of the courts of Saharanpur, Uttar Pradesh, India.
-              </p>
-            </section>
-            
-            <div className="pt-8 border-t border-outline-variant/30 text-center text-sm font-bold text-primary">
-              <p>For privacy-related inquiries: support@aykacare.in</p>
-            </div>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">AYKA CLYVORA PRIVATE LIMITED</h3>
+<p className="leading-relaxed mb-4">CIN: U62099UP2025PTC223390  |  DIPP206218</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">PRIVACY POLICY</h3>
+<p className="leading-relaxed mb-4"><strong>Effective Date: </strong>8 May 2026</p>
+<p className="leading-relaxed mb-4"><strong>Last Updated: </strong>8 May 2026</p>
+<p className="leading-relaxed mb-4"><strong>Version: </strong>1.0</p>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">1. INTRODUCTION AND IDENTITY OF THE DATA FIDUCIARY</h2>
+<p className="leading-relaxed mb-4">AYKA Clyvora Private Limited, a company incorporated under the Companies Act, 2013, bearing Corporate Identification Number U62099UP2025PTC223390 and registered under the Startup India initiative vide certificate DIPP206218, having its registered office at 5/1115, Khalapar Mohalla, Memaran, Saharanpur, Uttar Pradesh — 247001, India (hereinafter referred to as &quot;AYKA&quot;, &quot;the Company&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting the privacy and personal data of all persons who access or use its digital platforms and services.</p>
+<p className="leading-relaxed mb-4">This Privacy Policy (&quot;Policy&quot;) constitutes a legally binding document between the Company, acting as the Data Fiduciary, and you, the Data Principal, governing the collection, storage, use, processing, disclosure, and protection of your Personal Data in connection with your use of the following platforms operated by AYKA Clyvora Private Limited:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>AYKA Life — a cloud-based clinic management Software-as-a-Service platform designed for clinics, hospitals, and healthcare institutions, offering appointment scheduling, electronic medical records (EMR), billing, patient communication, and franchise operations management;</li>
+  <li>AYKA Expert — a telemedicine Software-as-a-Service subscription platform for registered medical practitioners to conduct online consultations, manage patient records, and issue digital prescriptions;</li>
+  <li>AYKA Care — a patient-facing teleconsultation platform enabling individuals to book medical appointments, consult registered doctors through digital channels, access personal health records, and manage their healthcare journey; and</li>
+  <li>AYKA Alliance — a three-tier franchise network (City, District, and State levels) enabling business partners to distribute, market, and support AYKA products within their respective geographies.</li>
+</ul>
+<p className="leading-relaxed mb-4">(Each of the above, individually and collectively, referred to as the &quot;Platform(s)&quot; or &quot;Services&quot;.)</p>
+<p className="leading-relaxed mb-4">This Policy is published in compliance with the Digital Personal Data Protection Act, 2023 (&quot;DPDP Act&quot;), the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 (&quot;SPDI Rules&quot;), the Information Technology Act, 2000 (&quot;IT Act&quot;), and all other applicable laws and regulations of India.</p>
+<p className="leading-relaxed mb-4">BY ACCESSING OR USING ANY OF OUR PLATFORMS, YOU CONFIRM THAT YOU HAVE READ, UNDERSTOOD, AND CONSENT TO THE TERMS OF THIS PRIVACY POLICY. IF YOU DO NOT AGREE TO THIS POLICY, PLEASE DISCONTINUE USE OF OUR PLATFORMS IMMEDIATELY.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">2. SCOPE AND APPLICATION</h2>
+<p className="leading-relaxed mb-4">This Policy applies to:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>all users of the AYKA Life, AYKA Expert, AYKA Care, and AYKA Alliance platforms, including but not limited to registered medical practitioners, clinics, hospitals, patients, franchise partners, and visitors to our websites;</li>
+  <li>all Personal Data and Sensitive Personal Data collected through our websites, mobile applications, application programming interfaces (APIs), and any other digital touchpoints operated by the Company;</li>
+  <li>all processing activities carried out by AYKA Clyvora Private Limited whether as a Data Fiduciary (when processing data for its own purposes) or as a Data Processor (when processing data on behalf of its business clients such as clinics and hospitals); and</li>
+  <li>data collected from third-party integrations including payment gateways, the Ayushman Bharat Digital Mission (ABDM) ecosystem, DigiLocker, MeriPehchaan, and third-party analytics and communication service providers.</li>
+</ul>
+<p className="leading-relaxed mb-4">This Policy does not apply to the practices of third-party websites, applications, or services that may be linked to or from our Platforms. We encourage you to review the privacy policies of any third-party services you access through our Platforms.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">3. DEFINITIONS</h2>
+<p className="leading-relaxed mb-4">In this Policy, unless the context otherwise requires, the following terms shall have the meanings ascribed to them below, which are aligned with the definitions provided under the Digital Personal Data Protection Act, 2023 and the Information Technology Act, 2000:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>3.1 &quot;Personal Data&quot; means any data about an individual who is identifiable by or in relation to such data, including but not limited to name, email address, phone number, date of birth, gender, postal address, financial information, device identifiers, and any other information that directly or indirectly identifies a natural person.</li>
+  <li>3.2 &quot;Sensitive Personal Data or Information&quot; (SPDI) means personal information consisting of passwords; financial information such as bank accounts, credit/debit card details; physical, physiological, and mental health conditions; sexual orientation; medical records and history; biometric information; and any other information received by the Company under lawful contract or otherwise, as specified under Rule 3 of the SPDI Rules, 2011.</li>
+  <li>3.3 &quot;Health Data&quot; means any Sensitive Personal Data or Information relating to an individual&apos;s physical or mental health, medical history, diagnosis, prescriptions, treatment records, investigation reports, or other clinical information collected through or stored on the Platforms.</li>
+  <li>3.4 &quot;Data Principal&quot; means the natural person to whom the Personal Data relates. In the context of children, Data Principal includes the parent or lawful guardian of such child.</li>
+  <li>3.5 &quot;Data Fiduciary&quot; means any person who alone or in conjunction with other persons determines the purpose and means of processing Personal Data. AYKA Clyvora Private Limited acts as a Data Fiduciary in relation to the Personal Data it collects and processes for its own purposes.</li>
+  <li>3.6 &quot;Data Processor&quot; means any person who processes Personal Data on behalf of a Data Fiduciary. AYKA Clyvora Private Limited may act as a Data Processor in respect of patient data collected and managed by clinics and hospitals using the AYKA Life platform.</li>
+  <li>3.7 &quot;Consent&quot; means a free, specific, informed, unconditional, and unambiguous indication of the Data Principal&apos;s wishes by a clear affirmative action, signifying agreement to the processing of Personal Data for a specified purpose.</li>
+  <li>3.8 &quot;Processing&quot; means a wholly or partly automated operation or set of operations performed on Personal Data or sets of Personal Data, including collection, recording, organisation, structuring, storage, adaptation, alteration, retrieval, use, disclosure, restriction, erasure, or destruction.</li>
+  <li>3.9 &quot;Purpose&quot; means the specific, clear, and lawful reason for which Personal Data is collected and processed, as communicated to the Data Principal at the time of or prior to collection.</li>
+  <li>3.10 &quot;Personal Data Breach&quot; means any unauthorised processing of Personal Data or accidental disclosure, acquisition, sharing, use, alteration, destruction, or loss of access to Personal Data that compromises the confidentiality, integrity, or availability of Personal Data.</li>
+  <li>3.11 &quot;Child&quot; means a person who has not completed eighteen years of age.</li>
+  <li>3.12 &quot;Grievance Officer / Data Protection Officer&quot; means the individual designated by the Company to receive, acknowledge, and resolve grievances related to the processing of Personal Data, as required under the DPDP Act, 2023 and the SPDI Rules, 2011.</li>
+</ul>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">4. PERSONAL DATA WE COLLECT</h2>
+<p className="leading-relaxed mb-4">We collect the following categories of Personal Data, depending on the Platform you access and your role as a user:</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">4.1 Information You Provide Directly</h3>
+<p className="leading-relaxed mb-4">When you register for or use our Platforms, you may provide us with:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Identity Information: full name, date of birth, gender, profile photograph;</li>
+  <li>Contact Information: email address, mobile number, postal address, city, state, PIN code;</li>
+  <li>Professional Information (for doctors and clinic administrators): medical registration number, registration council (State Medical Council / NMC), specialisation, years of experience, clinic name and address, GST Identification Number;</li>
+  <li>Authentication Credentials: username, password, one-time passwords (OTPs), security questions;</li>
+  <li>Financial Information: bank account details, UPI IDs, credit or debit card details (processed through our third-party payment gateway; the Company does not store full card numbers), billing address;</li>
+  <li>Health Information (for patients): chief complaints, medical history, current medications, known allergies, family medical history, investigation reports, diagnosis, prescriptions, and other clinical information you share during consultations; and</li>
+  <li>Franchise and Business Information (for AYKA Alliance partners): business entity details, PAN, GSTIN, territory coverage details, bank account information for payout purposes.</li>
+</ul>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">4.2 Health Data and Medical Records</h3>
+<p className="leading-relaxed mb-4">In connection with the telemedicine and clinical services facilitated through AYKA Expert and AYKA Care, we collect and store Health Data, which constitutes Sensitive Personal Data or Information under the SPDI Rules, 2011. This includes:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>consultation notes and summaries generated by consulting doctors;</li>
+  <li>digital prescriptions issued through the Platform;</li>
+  <li>diagnostic and investigation reports uploaded by you or your treating doctor;</li>
+  <li>symptom information and health queries submitted through our platforms or AI-assisted features;</li>
+  <li>ABHA (Ayushman Bharat Health Account) identification number and linked health records (where ABDM integration is enabled by the user); and</li>
+  <li>vitals, measurements, and other physiological data provided during consultations.</li>
+</ul>
+<p className="leading-relaxed mb-4">Collection and processing of Health Data is undertaken only with your explicit, informed, and written consent. You have the right to withdraw consent at any time, subject to the provisions of applicable law and any overriding legal obligation.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">4.3 Automatically Collected Information</h3>
+<p className="leading-relaxed mb-4">When you access our Platforms, our systems automatically collect certain technical and usage data, including:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Device Information: device type, model, operating system, unique device identifier (UDID), mobile network information;</li>
+  <li>Log Data: IP address, browser type and version, pages accessed, referring URL, date and time of access, time spent on pages;</li>
+  <li>Location Data: general geographic location inferred from IP address; precise location only if explicitly permitted by you through device settings;</li>
+  <li>Cookies and Tracking Technologies: session identifiers, preference cookies, analytics cookies (see Section 14 and our Cookie Policy for details); and</li>
+  <li>Usage Patterns: features accessed, frequency of use, search queries within the Platform, interaction data.</li>
+</ul>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">4.4 Information from Third Parties</h3>
+<p className="leading-relaxed mb-4">We may receive Personal Data about you from the following third-party sources:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Payment Gateways: transaction confirmation, payment status, and fraud prevention signals from our authorised payment gateway partners;</li>
+  <li>ABDM Ecosystem: health records linked to your ABHA ID, shared with your explicit consent through the ABDM consent manager framework;</li>
+  <li>DigiLocker / MeriPehchaan: identity verification data where you use these government-authorised services for KYC or document verification;</li>
+  <li>Referral Partners: basic contact details from authorised AYKA Alliance partners who refer new users to the Platform; and</li>
+  <li>Social Login Providers: if you choose to register or log in through third-party social authentication services, we receive the profile information authorised by you on that platform.</li>
+</ul>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">5. PURPOSE OF PROCESSING PERSONAL DATA</h2>
+<p className="leading-relaxed mb-4">We collect and process your Personal Data solely for the following specified, clear, and lawful purposes:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Account Registration and Authentication: to create, verify, and maintain your user account on the Platform, including identity verification and credential management;</li>
+  <li>Provision of Services: to deliver the healthcare, telemedicine, clinic management, or franchise services you have subscribed to or requested, including facilitating online consultations, generating prescriptions, managing appointments, and processing transactions;</li>
+  <li>Health Record Management: to create, store, retrieve, and share your health records and consultation history in accordance with your instructions and applicable telemedicine regulations;</li>
+  <li>Payment Processing and Financial Administration: to process subscription fees, consultation charges, franchise commissions, and payouts, and to generate GST-compliant invoices;</li>
+  <li>Communication and Notifications: to send you appointment reminders, prescription confirmations, service updates, billing notifications, and other transactional communications essential to your use of the Platform;</li>
+  <li>Customer Support and Grievance Redressal: to respond to your queries, complaints, and grievances in accordance with applicable law;</li>
+  <li>Platform Improvement and Research: to analyse aggregated and anonymised usage data for the purpose of improving our Platforms, features, and user experience;</li>
+  <li>Safety, Security, and Fraud Prevention: to detect, investigate, and prevent fraudulent transactions, unauthorised access, and other illegal or prohibited activities;</li>
+  <li>Legal and Regulatory Compliance: to comply with applicable laws, court orders, regulatory directions, or enforceable governmental requests including under the IT Act, DPDP Act, and healthcare regulations;</li>
+  <li>ABDM Compliance: to enable sharing of health records through the ABDM ecosystem with your explicit consent, in accordance with the Health Data Management Policy of the National Health Authority;</li>
+  <li>Marketing and Promotional Communications: to send you information about new features, products, or offers where you have provided consent or where such communication is permitted under applicable law. You may opt out at any time; and</li>
+  <li>AI and Algorithm Improvement: to use anonymised and pseudonymised data for training, testing, and improving our artificial intelligence and machine learning features, subject to your consent and the provisions of our AI Usage and Disclaimer Policy.</li>
+</ul>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">6. LEGAL BASIS FOR PROCESSING</h2>
+<p className="leading-relaxed mb-4">We process your Personal Data on the following legal bases, as provided under the Digital Personal Data Protection Act, 2023:</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">6.1 Consent (Section 6, DPDP Act)</h3>
+<p className="leading-relaxed mb-4">For the collection and processing of Sensitive Personal Data and Health Data, for marketing communications, and for any purpose not covered by the legitimate uses below, we rely on your free, specific, informed, unconditional, and unambiguous consent, obtained prior to or at the time of collection. You may withdraw consent at any time; however, withdrawal shall not affect the lawfulness of processing carried out before withdrawal, and may limit our ability to provide certain services.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">6.2 Legitimate Uses (Section 7, DPDP Act)</h3>
+<p className="leading-relaxed mb-4">We may process certain Personal Data without consent under the following legitimate uses as specified in Section 7 of the DPDP Act:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>the State or any instrumentality of the State processing data for the performance of any function under law;</li>
+  <li>compliance with a judgment, decree, or order under law;</li>
+  <li>responding to a medical emergency involving a threat to life or immediate threat to health;</li>
+  <li>taking measures to provide medical treatment or health services during an epidemic, outbreak, or other threat to public health; and</li>
+  <li>processing for purposes of employment, including the prevention of corporate espionage, and maintenance of confidentiality of trade secrets, intellectual property, and classified information.</li>
+</ul>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">6.3 Legal Obligation</h3>
+<p className="leading-relaxed mb-4">We process Personal Data where necessary to comply with a legal obligation to which we are subject, including obligations under the DPDP Act, IT Act, GST law, income tax law, and healthcare regulations including the Telemedicine Practice Guidelines, 2020.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">7. HEALTH DATA AND SENSITIVE PERSONAL INFORMATION</h2>
+<p className="leading-relaxed mb-4">Health Data and other Sensitive Personal Data or Information collected through our Platforms receive the highest level of protection under this Policy and applicable law.</p>
+<p className="leading-relaxed mb-4">We undertake the following obligations in relation to Health Data:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Explicit Consent: We collect Health Data only with your explicit, informed, and written consent, obtained through a clear and specific consent mechanism at the time of or prior to collection. Consent for Health Data is separate from general registration consent.</li>
+  <li>Purpose Limitation: Health Data is used exclusively for the purpose for which consent was obtained — primarily, to facilitate your telemedicine consultation, enable access to your health records, and support the clinical functions of the AYKA Expert and AYKA Care platforms. Health Data will not be used for commercial purposes, advertising, or profiling without your explicit additional consent.</li>
+  <li>Restricted Disclosure: We will not transfer or disclose your Health Data to any third party except: (a) to the consulting doctor with whom you have scheduled a consultation; (b) to our authorised data processors (such as cloud infrastructure providers) who are contractually obligated to maintain equivalent standards of data protection; (c) to government authorities or healthcare regulators where required by law; or (d) in a genuine medical emergency where disclosure is necessary to protect your life or health.</li>
+  <li>ABDM Integration: If you choose to link your ABHA ID and participate in the ABDM health records ecosystem, your health records will be shared only in accordance with your consent artefact issued through the ABDM consent manager. You may modify or revoke such consent through the ABDM consent manager at any time.</li>
+  <li>Security Measures: We implement technical and organisational security measures appropriate to the sensitivity of Health Data, including encryption at rest and in transit, role-based access controls, and audit logging. See Section 15 for details.</li>
+  <li>Retention: Health Data is retained for the period specified in Section 10 of this Policy, consistent with the record-keeping requirements of the Telemedicine Practice Guidelines, 2020.</li>
+</ul>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">8. HOW WE SHARE YOUR PERSONAL DATA</h2>
+<p className="leading-relaxed mb-4">We do not sell, rent, or trade your Personal Data to any third party. We share Personal Data only in the following circumstances and with the following categories of recipients:</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">8.1 Healthcare Professionals</h3>
+<p className="leading-relaxed mb-4">Where you have scheduled a consultation through AYKA Care or AYKA Expert, we share your relevant health information, consultation history, and contact details with the consulting registered medical practitioner, to the extent necessary to enable the provision of medical services.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">8.2 Authorised Service Providers and Data Processors</h3>
+<p className="leading-relaxed mb-4">We engage third-party service providers who process Personal Data on our behalf under contractual obligations that require them to maintain standards of data protection equivalent to those set out in this Policy. These include:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>cloud infrastructure and hosting providers (data centres located within India);</li>
+  <li>payment gateway operators for processing financial transactions;</li>
+  <li>SMS, email, and push notification service providers for transactional communications;</li>
+  <li>customer relationship management (CRM) and helpdesk software providers; and</li>
+  <li>analytics and performance monitoring tools operating on anonymised or pseudonymised data.</li>
+</ul>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">8.3 ABDM and Government Health Ecosystem</h3>
+<p className="leading-relaxed mb-4">With your explicit consent, we share relevant health data with the Ayushman Bharat Digital Mission (ABDM) ecosystem operated by the National Health Authority, enabling interoperability with other ABDM-registered health entities. Such sharing is governed by the ABDM Health Data Management Policy and subject to your ABDM consent artefact.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">8.4 Legal and Regulatory Authorities</h3>
+<p className="leading-relaxed mb-4">We may disclose Personal Data to courts, law enforcement agencies, regulatory bodies, or government authorities where required by law, by court order, or where we believe in good faith that disclosure is necessary to: (a) comply with a legal obligation; (b) protect the rights, property, or safety of the Company, our users, or the public; or (c) detect, prevent, or address fraud, security, or technical issues.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">8.5 Business Transfers</h3>
+<p className="leading-relaxed mb-4">In the event of a merger, acquisition, restructuring, or sale of all or part of our business assets, your Personal Data may be transferred to the acquiring entity, subject to the acquirer being bound by equivalent data protection obligations. We will provide notice of any such transfer through our Platforms.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">8.6 Aggregate and Anonymised Data</h3>
+<p className="leading-relaxed mb-4">We may share aggregated, anonymised, or pseudonymised data that does not identify any individual for purposes of research, analytics, industry benchmarking, or public health reporting. Such data is not Personal Data and is not subject to the restrictions of this Policy.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">9. INTERNATIONAL TRANSFERS OF PERSONAL DATA</h2>
+<p className="leading-relaxed mb-4">AYKA Clyvora Private Limited stores and processes all Personal Data, and in particular all Health Data and Sensitive Personal Data, on servers and infrastructure located within the territory of India, in compliance with applicable data localisation requirements.</p>
+<p className="leading-relaxed mb-4">To the extent that any cross-border transfer of Personal Data becomes necessary for operational reasons (such as the use of a foreign-headquartered cloud service provider or analytics tool), such transfer shall be undertaken only to countries notified by the Central Government of India as permissible destinations for the transfer of Personal Data under the DPDP Act, 2023, and subject to appropriate contractual safeguards including standard contractual clauses or equivalent data protection agreements.</p>
+<p className="leading-relaxed mb-4">[CLIENT TO CONFIRM: Please verify current data residency arrangements with your cloud infrastructure provider and confirm whether any data is currently processed outside India. Update this section accordingly before publication.]</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">10. DATA RETENTION</h2>
+<p className="leading-relaxed mb-4">We retain Personal Data only for as long as necessary to fulfil the purpose for which it was collected, or as required or permitted by applicable law, whichever is longer. The following retention periods apply:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Account and Registration Data: retained for the duration of your active account and for a period of three (3) years following account deletion or deactivation, to address any post-termination queries, disputes, or legal claims;</li>
+  <li>Health Data and Consultation Records: retained for a minimum period of seven (7) years from the date of the consultation or last interaction, consistent with the record-keeping obligations under the Telemedicine Practice Guidelines, 2020 and applicable medical records law;</li>
+  <li>Financial Transaction Data: retained for a period of eight (8) years from the date of transaction, in compliance with the requirements of the Income Tax Act, 1961 and GST law;</li>
+  <li>Communication Logs and Customer Support Records: retained for a period of two (2) years from the date of the communication or resolution of the support ticket;</li>
+  <li>Usage and Analytics Data: retained in anonymised form for a period of up to five (5) years for platform improvement and statistical purposes; and</li>
+  <li>Legal Hold: where Personal Data is subject to an ongoing legal proceeding, regulatory investigation, or dispute, we may retain relevant data beyond the above periods until the matter is resolved.</li>
+</ul>
+<p className="leading-relaxed mb-4">Upon expiry of the applicable retention period, Personal Data is securely deleted or anonymised in a manner that prevents reconstruction. You may request deletion of your Personal Data at any time in accordance with Section 12.3 (Right to Erasure), subject to any overriding legal retention obligations.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">11. CHILDREN&apos;S PRIVACY</h2>
+<p className="leading-relaxed mb-4">Our Platforms are designed for use by adults. We do not knowingly collect Personal Data from children (individuals below the age of eighteen (18) years) without verifiable parental or guardian consent.</p>
+<p className="leading-relaxed mb-4">Where a parent or legal guardian seeks to register a child as a patient on AYKA Care or to obtain teleconsultation services on behalf of a child, the following requirements apply:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>The parent or guardian must create and maintain the account; the child may not independently create or hold an account;</li>
+  <li>The parent or guardian must provide verifiable consent for the collection and processing of the child&apos;s Personal Data and Health Data at the time of registration;</li>
+  <li>Health Data relating to the child will be associated with the parent or guardian&apos;s account and will not be processed for any purpose beyond provision of the requested healthcare services; and</li>
+  <li>The parent or guardian may, at any time, withdraw consent for the processing of the child&apos;s data, access the child&apos;s records, or request deletion of the child&apos;s data, by contacting our Grievance Officer.</li>
+</ul>
+<p className="leading-relaxed mb-4">We have implemented age verification measures at the time of registration. If we discover that we have inadvertently collected Personal Data from a child without verifiable parental consent, we will take immediate steps to delete such data. If you believe we may have collected data from a child without appropriate consent, please contact us immediately at the details provided in Section 19.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">12. YOUR RIGHTS AS A DATA PRINCIPAL</h2>
+<p className="leading-relaxed mb-4">Under the Digital Personal Data Protection Act, 2023, you, as a Data Principal, have the following rights in relation to your Personal Data processed by us:</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">12.1 Right to Access Information About Processing (Section 11, DPDP Act)</h3>
+<p className="leading-relaxed mb-4">You have the right to obtain confirmation as to whether we are processing your Personal Data, and to access a summary of the Personal Data being processed, the processing activities undertaken with respect to your data, and the identities of other Data Fiduciaries and Data Processors with whom your data has been shared.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">12.2 Right to Correction and Updation (Section 12, DPDP Act)</h3>
+<p className="leading-relaxed mb-4">You have the right to request correction of inaccurate or misleading Personal Data, completion of incomplete Personal Data, and updation of Personal Data that is no longer current. We will process such requests within a reasonable time and will notify any Data Processor or recipient with whom the corrected data must be updated.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">12.3 Right to Erasure (Section 12, DPDP Act)</h3>
+<p className="leading-relaxed mb-4">You have the right to request the erasure of your Personal Data where the purpose for which it was collected is no longer being served, or where you withdraw consent and no other legal basis for processing exists. Please note that we may be required to retain certain data beyond your erasure request to comply with legal obligations, including the Health Data retention requirements specified in Section 10.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">12.4 Right to Nominate (Section 14, DPDP Act)</h3>
+<p className="leading-relaxed mb-4">You have the right to nominate any other individual to exercise your rights under the DPDP Act in the event of your death or incapacity. You may register or update your nominee through your account settings or by contacting our Grievance Officer.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">12.5 Right to Grieve (Section 13, DPDP Act)</h3>
+<p className="leading-relaxed mb-4">You have the right to have your grievances regarding the processing of your Personal Data addressed by our Grievance Officer within the timelines specified in Section 17 of this Policy. If you are dissatisfied with our response, you have the right to escalate your complaint to the Data Protection Board of India.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">13. HOW TO EXERCISE YOUR RIGHTS</h2>
+<p className="leading-relaxed mb-4">To exercise any of the rights set out in Section 12, or to ask questions or raise concerns about our data processing practices, you may contact our Grievance Officer using the details provided in Section 17. Your request should include:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>your full name and registered email address or mobile number;</li>
+  <li>the specific right you wish to exercise and the Personal Data to which your request relates; and</li>
+  <li>any supporting information or documentation relevant to your request.</li>
+</ul>
+<p className="leading-relaxed mb-4">We will acknowledge your request within forty-eight (48) hours and will endeavour to respond substantively within thirty (30) days of receipt. Where additional time is required due to the complexity of the request, we will notify you of the reason for delay and the expected resolution timeline.</p>
+<p className="leading-relaxed mb-4">We may request additional information to verify your identity before processing requests relating to Personal Data, to ensure the security and privacy of our users.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">14. COOKIES AND TRACKING TECHNOLOGIES</h2>
+<p className="leading-relaxed mb-4">Our websites and Platforms use cookies, web beacons, pixel tags, and similar tracking technologies to enhance user experience, analyse platform usage, and deliver relevant communications.</p>
+<p className="leading-relaxed mb-4">We use the following categories of cookies:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Strictly Necessary Cookies: essential for the basic functioning of our Platforms, including authentication, session management, and security. These cannot be disabled without affecting your ability to use core features.</li>
+  <li>Functional / Preference Cookies: used to remember your preferences, language settings, and personalisation choices to improve your experience.</li>
+  <li>Analytics and Performance Cookies: used to collect anonymised information about how users interact with our Platforms, enabling us to improve performance and user experience. These include tools such as Google Analytics operating under data processing agreements.</li>
+  <li>Marketing and Targeting Cookies: used only with your explicit consent to deliver targeted communications and measure the effectiveness of our marketing campaigns. These include third-party tools such as the Meta Pixel and Google Ads tags.</li>
+</ul>
+<p className="leading-relaxed mb-4">You can manage your cookie preferences through your browser settings or through the cookie consent banner displayed on our websites. Please refer to our Cookie Policy for a complete list of cookies used, their duration, and instructions for managing preferences.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">15. SECURITY MEASURES</h2>
+<p className="leading-relaxed mb-4">We implement robust technical and organisational security measures to protect your Personal Data from unauthorised access, accidental loss, alteration, or destruction. Our security framework includes:</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">15.1 Technical Measures</h3>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Encryption: all Personal Data, and in particular Health Data and financial information, is encrypted at rest using AES-256 encryption and in transit using TLS 1.2 or higher;</li>
+  <li>Access Controls: role-based access control (RBAC) ensures that only authorised personnel can access Personal Data, strictly limited to the extent necessary for their designated functions;</li>
+  <li>Authentication: multi-factor authentication (MFA) is enforced for administrative access to systems containing Personal Data;</li>
+  <li>Audit Logging: comprehensive audit logs are maintained for all access to, and operations performed on, Personal Data, and are reviewed periodically; and</li>
+  <li>Vulnerability Management: regular security assessments, penetration testing, and vulnerability scans are conducted to identify and remediate security weaknesses.</li>
+</ul>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">15.2 Organisational Measures</h3>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Data Protection Training: all employees and contractors with access to Personal Data are required to undergo data protection and security training;</li>
+  <li>Confidentiality Obligations: all personnel processing Personal Data are bound by confidentiality obligations and non-disclosure agreements;</li>
+  <li>Third-Party Assessments: all Data Processors and service providers are required to demonstrate equivalent security standards as a condition of engagement; and</li>
+  <li>Business Continuity: we maintain business continuity and disaster recovery plans to minimise disruption and data loss in the event of a system failure or security incident.</li>
+</ul>
+<p className="leading-relaxed mb-4">Notwithstanding the foregoing, no method of electronic transmission or storage is one hundred percent secure. We cannot guarantee the absolute security of your Personal Data and encourage you to exercise caution when transmitting sensitive information online. You are responsible for maintaining the confidentiality of your account credentials.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">16. PERSONAL DATA BREACH RESPONSE</h2>
+<p className="leading-relaxed mb-4">In the event of a Personal Data Breach, we will follow the procedure set out below in compliance with Section 8(6) of the DPDP Act, 2023 and the directions of the Data Protection Board:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>Detection and Containment: upon detection of a breach, our security team will immediately initiate containment measures to limit the scope and impact of the breach;</li>
+  <li>Assessment: we will assess the nature, scope, and likely consequences of the breach, including the categories and approximate number of Data Principals affected;</li>
+  <li>Notification to Data Protection Board: we will notify the Data Protection Board of India of the breach in the form, manner, and within the timeframe prescribed by the Board, providing details of the nature of the breach, the Personal Data affected, and the remedial measures taken or proposed;</li>
+  <li>Notification to Affected Data Principals: we will notify each affected Data Principal of the breach in clear and plain language, including the nature of the data compromised, the likely impact, and the steps we are taking to address the breach and protect affected individuals; and</li>
+  <li>Remediation: we will implement remedial measures to address the vulnerabilities that gave rise to the breach and to prevent recurrence.</li>
+</ul>
+<p className="leading-relaxed mb-4">We maintain an incident response plan and conduct regular breach simulation exercises to ensure preparedness. All breach notifications to Data Principals will be delivered through the contact details registered with the Platform.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">17. GRIEVANCE REDRESSAL</h2>
+<p className="leading-relaxed mb-4">In accordance with Section 13 of the Digital Personal Data Protection Act, 2023, Rule 5(9) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, and Rule 5 of the SPDI Rules, 2011, we have designated a Grievance Officer to receive and resolve grievances from Data Principals regarding the processing of their Personal Data.</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">Grievance Officer / Data Protection Officer</h3>
+<p className="leading-relaxed mb-4"><strong>Name: </strong>Aakash Yadav</p>
+<p className="leading-relaxed mb-4"><strong>Designation: </strong>Grievance Officer &amp; Data Protection Officer</p>
+<p className="leading-relaxed mb-4"><strong>Company: </strong>AYKA Clyvora Private Limited</p>
+<p className="leading-relaxed mb-4"><strong>Email: </strong>support@aykacare.in</p>
+<p className="leading-relaxed mb-4"><strong>Postal Address: </strong>AYKA Clyvora Private Limited, 5/1115, Khalapar Mohalla, Memaran, Saharanpur, Uttar Pradesh — 247001</p>
+<p className="leading-relaxed mb-4"><strong>Phone: </strong>+91 92207 82066</p>
+<p className="leading-relaxed mb-4"><strong>Working Hours: </strong>Monday to Saturday, 10:00 AM to 6:00 PM IST (except public holidays)</p>
+<p className="leading-relaxed mb-4">We will acknowledge your grievance within forty-eight (48) hours of receipt and will aim to resolve it within thirty (30) days. If your grievance is not resolved to your satisfaction, you may escalate it to the Data Protection Board of India at www.dpb.gov.in.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">18. CHANGES TO THIS PRIVACY POLICY</h2>
+<p className="leading-relaxed mb-4">We reserve the right to update or amend this Privacy Policy from time to time to reflect changes in our business practices, technology, legal requirements, or regulatory developments.</p>
+<p className="leading-relaxed mb-4">In the event of a material change to this Policy — including any change that affects the purposes for which Personal Data is processed, the categories of data collected, or the rights of Data Principals — we will provide you with at least thirty (30) days&apos; prior notice through one or more of the following channels:</p>
+<ul className="list-disc pl-6 space-y-2 mb-4">
+  <li>a prominent notice on our Platform or website;</li>
+  <li>an email notification to the address registered with your account; or</li>
+  <li>an in-app notification.</li>
+</ul>
+<p className="leading-relaxed mb-4">Your continued use of our Platforms following the effective date of the revised Policy shall constitute your acceptance of the updated terms. If you do not agree to the revised Policy, you must discontinue use of our Platforms and may request deletion of your account and Personal Data.</p>
+<p className="leading-relaxed mb-4">We recommend that you review this Policy periodically to stay informed of how we protect your information. The version history and effective date of each version are maintained at the footer of this Policy.</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">19. CONTACT US</h2>
+<p className="leading-relaxed mb-4">If you have any questions, concerns, or requests regarding this Privacy Policy or the processing of your Personal Data, please contact us at:</p>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">AYKA Clyvora Private Limited</h3>
+<p className="leading-relaxed mb-4"><strong>CIN: </strong>U62099UP2025PTC223390</p>
+<p className="leading-relaxed mb-4"><strong>Registered Office: </strong>5/1115, Khalapar Mohalla, Memaran, Saharanpur, Uttar Pradesh — 247001, India</p>
+<p className="leading-relaxed mb-4"><strong>General Inquiries / Phone: </strong>+91 92207 82066  |  info@aykacare.in</p>
+<p className="leading-relaxed mb-4"><strong>Privacy / Data Inquiries: </strong>support@aykacare.in</p>
+<p className="leading-relaxed mb-4"><strong>Grievance Officer: </strong>support@aykacare.in  |  Aakash Yadav</p>
+<p className="leading-relaxed mb-4"><strong>Customer Support: </strong>support@aykacare.in</p>
+<p className="leading-relaxed mb-4"><strong>Website: </strong>www.aykacare.in, www.aykaexpert.in</p>
+</section>
+<section className="space-y-4">
+  <h2 className="text-2xl font-bold text-primary mb-4">20. EFFECTIVE DATE AND VERSION HISTORY</h2>
+  <h3 className="text-xl font-bold text-primary mt-6 mb-3">Version	Effective Date	Nature of Change</h3>
+<p className="leading-relaxed mb-4"><strong>1.0</strong> 8 May 2026	Initial publication</p>
+<p className="leading-relaxed mb-4"><em>This Privacy Policy is published by AYKA Clyvora Private Limited in compliance with the Digital Personal Data Protection Act, 2023, the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and all other applicable laws of India.</em></p>
+</section>
           </div>
         </div>
       </main>
