@@ -98,7 +98,7 @@ async function sendWhatsAppMessage(phone: string, name: string, franchiseModel: 
 }
 // ──────────────────────────────────────────────────────────────────────────
 
-export async function submitApplication(data: ApplicationData) {
+export async function submitApplication(data: ApplicationData): Promise<{ success: boolean; error?: string }> {
   // 1. Save to Supabase (if configured)
   if (supabase) {
     const { error } = await supabase
